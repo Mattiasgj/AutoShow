@@ -1,0 +1,14 @@
+/* MAIN GRID */
+.home-grid{
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "intro-text intro-text"
+	"footer footer";
+    grid-template-rows: 75px 1fr;
+	min-height: 100vh;
+    background-color: var(--background-color);
+    background-size: cover;
+    background-position: center;
+	overflow-y: auto;
+}

@@ -1,0 +1,57 @@
+:root {
+
+	/* --- Typography Variables --- */
+  	--font-family-base: 'Overpass', system-ui, -apple-system, sans-serif;
+  	--font-family-heading: 'Overpass', system-ui, -apple-system, sans-serif;
+
+	/* Primary */
+	--color-primary: #1e3a8a;       
+	--color-primary-hover: #1e40af; 
+	--color-primary-light: #dbeafe; 
+
+	/* Action */
+	--color-accent: #ea580c;        
+  	--color-accent-hover: #c2410c;  
+
+	/* Backgrounds and Surfaces */
+	--color-bg-base: #f8fafc;       
+	--color-bg-surface: #ffffff;    
+	--color-bg-alt: #f1f5f9;        
+
+	/* Text */
+	--color-text-main: #0f172a;     
+ 	--color-text-muted: #64748b;    
+	--color-text-inverse: #ffffff;  
+
+	/* Borders & Dividers */
+	--color-border-light: #e2e8f0;  
+	--color-border-strong: #94a3b8; 
+
+	/* Status & Badges */
+	--color-status-good: #16a34a;   /* "Great Deal", "Clean Title", "Available" */
+	--color-status-alert: #dc2626;  /* "Price Drop", "Sold", "1 Accident" */
+	--color-status-warn: #ca8a04;   /* "Pending", "High Demand" */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;          
+	padding: 0;
+	height: 100%;
+	background-color: var(--color-bg-base);
+}
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('../assets/fonts/Overpass-Regular.ttf') format('truetype');
+}
+
+.page-container {
+	max-width: 1500px;
+	margin: 0 auto; 
+}
