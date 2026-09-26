@@ -3,7 +3,8 @@
     display: grid;
     grid-template-areas: 
     "navbar navbar"
-    "intro-text intro-text"
+    "cartype cartype"
+	"carfilter cars"
 	"footer footer";
     grid-template-rows: 75px 1fr;
 	min-height: 100vh;
