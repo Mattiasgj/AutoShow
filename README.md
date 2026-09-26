@@ -1,1 +1,0 @@
-# Auto Show - buy and sell used cars
