@@ -7,14 +7,7 @@ function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.left}>
-				<NavLink
-					to="/"
-					className={({ isActive }) =>
-						isActive
-							? `${styles.autoshow} ${styles.active}`
-							: styles.name
-					}
-				>
+				<NavLink to="/buy" className={styles.logo}>
 					<img
 						src={AutoShowLogo}
 						alt="AutoShow"
@@ -28,19 +21,28 @@ function Navbar() {
 					to="/sell"
 					className={({ isActive }) =>
 						isActive
-							? `${styles.autoshow} ${styles.active}`
-							: styles.name
+							? `${styles.sell} ${styles.active}`
+							: styles.sell
 					}
 				>
 					Sell
 				</NavLink>
 
 				<NavLink
+					to="/buy"
+					className={({ isActive }) =>
+						isActive ? `${styles.buy} ${styles.active}` : styles.buy
+					}
+				>
+					Buy
+				</NavLink>
+
+				<NavLink
 					to="/messages"
 					className={({ isActive }) =>
 						isActive
-							? `${styles.autoshow} ${styles.active}`
-							: styles.name
+							? `${styles.messages} ${styles.active}`
+							: styles.messages
 					}
 				>
 					Messages
@@ -50,8 +52,8 @@ function Navbar() {
 					to="/notifications"
 					className={({ isActive }) =>
 						isActive
-							? `${styles.autoshow} ${styles.active}`
-							: styles.name
+							? `${styles.notifications} ${styles.active}`
+							: styles.notifications
 					}
 				>
 					Notifications
@@ -61,8 +63,8 @@ function Navbar() {
 					to="/login"
 					className={({ isActive }) =>
 						isActive
-							? `${styles.autoshow} ${styles.active}`
-							: styles.name
+							? `${styles.login} ${styles.active}`
+							: styles.login
 					}
 				>
 					Login

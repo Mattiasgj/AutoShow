@@ -6,6 +6,7 @@
 .right {
 	display: flex;
 	align-items: center;
+	
 }
 
 .navbar {
@@ -31,4 +32,10 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
+}
+
+/* Active link styling */
+.navbar a.active {
+	text-decoration: underline wavy var(--color-primary) 2px;
+	text-underline-offset: 4px;
 }
