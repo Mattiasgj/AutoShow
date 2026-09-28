@@ -1,0 +1,60 @@
+.buyyourcar {
+	justify-self: center;
+    grid-area: buyyourcar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+	height: 200px;
+}
+
+.left {
+	grid-area: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+	font-family: var(--font-family-heading);
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.carcategory {
+	background-color: var(--color-bg-surface);
+	border-radius: 15px;
+	border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	width: 120px;
+	height: 100px;
+}
+
+.categoryname {
+	font-family: var(--font-family-base);
+	font-size: 16px;
+}
+
+.caricon{
+	width: 40px;
+	height: auto;
+}
+
+/* Active and hover styling for car categories */
+
+.active {
+    border: solid 1px;
+}
+
+.carcategory:hover{
+	border: solid 1px;
+} 	
