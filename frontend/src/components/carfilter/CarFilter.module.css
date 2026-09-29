@@ -1,0 +1,7 @@
+.carfilter{
+	justify-self: center;
+	grid-area: carfilter;
+	display: flex;
+	flex-direction: column;
+	min-width: 450px;
+}
