@@ -7,11 +7,17 @@ import CarListings from "../components/carlistings/CarListings";
 
 export function Home() {
 	return (
-		<div className="home-grid">
-			<Navbar></Navbar>
-			<BuyYourCar></BuyYourCar>
-			<CarFilter></CarFilter>
-			<CarListings></CarListings>
+		<div className="home">
+			<Navbar />
+
+			<main className="content-wrapper">
+				<BuyYourCar />
+
+				<div className="car-content">
+					<CarFilter />
+					<CarListings />
+				</div>
+			</main>
 		</div>
 	);
 }

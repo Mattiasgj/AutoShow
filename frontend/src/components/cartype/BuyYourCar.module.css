@@ -1,15 +1,13 @@
 .buyyourcar {
 	justify-self: center;
-    grid-area: buyyourcar;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
 	height: 200px;
+	width: 100%;
 }
 
-.left {
-	grid-area: left;
+.left {	
 	display: flex;
 	align-items: center;
 	justify-content: center;

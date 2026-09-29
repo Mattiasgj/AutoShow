@@ -11,11 +11,11 @@
 
 .navbar {
 	background-color: var(--color-bg-surface);
-	grid-area: navbar;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 30px;
+	height: 75px;
 }
 
 .logo {

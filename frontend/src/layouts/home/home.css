@@ -1,15 +1,16 @@
-/* MAIN GRID */
-.home-grid{
-    display: grid;
-    grid-template-areas: 
-    "navbar navbar"
-    "buyyourcar buyyourcar"
-	"carfilter carlistings"
-	"footer footer";
-    grid-template-rows: 75px auto 1fr auto;
-	min-height: 100vh;
+.home {
+    min-height: 100vh;
     background-color: var(--background-color);
-    background-size: cover;
-    background-position: center;
-	overflow-y: auto;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-content {
+    display: grid;
+    grid-template-columns: 325px 1fr;
+    gap: 30px;
 }
