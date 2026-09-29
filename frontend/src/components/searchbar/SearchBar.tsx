@@ -4,8 +4,11 @@ import { Search } from "lucide-react";
 function SearchBar() {
 	return (
 		<div className={styles.searchbar}>
-			<Search></Search>
-			<input placeholder="Type to search..." />
+			<Search className={styles.searchicon}></Search>
+			<input
+				placeholder="Type to search..."
+				className={styles.inputfield}
+			/>
 		</div>
 	);
 }

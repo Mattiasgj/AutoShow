@@ -1,4 +1,25 @@
 .searchbar{
+	display: flex;
+	align-items: center;
 	background-color: var(--color-bg-surface);
 	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	border: solid black 1px;
+}
+
+.inputfield{
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-family: var(--font-family-base);
+	margin-left: 5px;
+}
+
+.inputfield:focus {
+	outline: none;
+}
+
+.searchicon{
+	margin-left: 4px;
 }
