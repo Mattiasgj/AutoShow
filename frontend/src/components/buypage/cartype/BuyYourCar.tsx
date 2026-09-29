@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { Car } from "lucide-react";
 
-import volvoLogo from "../../assets/brand-logos-main/volvo-logo.svg";
-import bmwLogo from "../../assets/brand-logos-main/bmw-logo.svg";
-import mercedesLogo from "../../assets/brand-logos-main/mercedes-benz-logo.svg";
-import volkswagenLogo from "../../assets/brand-logos-main/volkswagen-logo.svg";
-import opelLogo from "../../assets/brand-logos-main/opel-logo.svg";
+import volvoLogo from "../../../assets/brand-logos-main/volvo-logo.svg";
+import bmwLogo from "../../../assets/brand-logos-main/bmw-logo.svg";
+import mercedesLogo from "../../../assets/brand-logos-main/mercedes-benz-logo.svg";
+import volkswagenLogo from "../../../assets/brand-logos-main/volkswagen-logo.svg";
+import opelLogo from "../../../assets/brand-logos-main/opel-logo.svg";
 
 import styles from "./BuyYourCar.module.css";
 
