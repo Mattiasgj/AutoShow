@@ -1,0 +1,19 @@
+.carmakemodel{
+	display: flex;
+	flex-direction: column;
+}
+
+.makemodelheader{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: var(--font-family-base);
+}
+
+.makemodelinput{
+	font-family: var(--font-family-base);
+}
+
+.models{
+	font-family: var(--font-family-base);
+	margin-left: 7px;
+}
