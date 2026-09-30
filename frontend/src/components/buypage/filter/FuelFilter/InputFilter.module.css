@@ -1,17 +1,16 @@
-.carmakemodel{
+.fuelfilter{
 	display: flex;
 	flex-direction: column;
 }
 
-.makemodelheader{
+.fuelheader{
 	font-family: var(--font-family-base);
 }
 
-.makemodelinput{
+.fuelinput{
 	font-family: var(--font-family-base);
 }
 
-.models{
+.fuellabel{
 	font-family: var(--font-family-base);
-	margin-left: 7px;
 }
