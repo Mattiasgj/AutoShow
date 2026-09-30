@@ -1,0 +1,10 @@
+.filterlider{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.filtersliderlabel{
+	font-family: var(--font-family-base);
+}
+

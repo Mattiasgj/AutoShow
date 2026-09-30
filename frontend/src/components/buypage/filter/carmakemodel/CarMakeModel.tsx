@@ -6,10 +6,13 @@ function CarMakeModel() {
 	const [selectedMake, setSelectedMake] = useState("");
 	const [selectedModel, setSelectedModel] = useState("");
 
+	type CarMake = keyof typeof carMakes;
+
 	return (
 		<div className={styles.carmakemodel}>
 			<div className={styles.makemodelheader}>Make and model</div>
-			{Object.keys(carMakes).map((make) => (
+
+			{(Object.keys(carMakes) as CarMake[]).map((make) => (
 				<div key={make}>
 					<div className={styles.makemodelinput}>
 						<input
@@ -21,18 +24,20 @@ function CarMakeModel() {
 								)
 							}
 						/>
+
 						<label>{make}</label>
 					</div>
 
 					{selectedMake === make && (
 						<div className={styles.models}>
-							{carMakes[make].map((model: string) => (
+							{carMakes[make].map((model) => (
 								<div key={model}>
 									<input
 										type="checkbox"
 										checked={selectedModel === model}
 										onChange={() => setSelectedModel(model)}
 									/>
+
 									<label>{model}</label>
 								</div>
 							))}
