@@ -1,9 +1,9 @@
 import "../layouts/buypage/buy.css";
 
 import Navbar from "../components/rootcomponents/Navbar";
-import BuyYourCar from "../components/buypage/cartype/BuyYourCar";
+import BuyYourCar from "../components/buypage/buyyourcar/BuyYourCar";
 import CarFilter from "../components/buypage/filter/carfilter/CarFilter";
-import CarListings from "../components/buypage/carlistings/CarListings";
+import CarListings from "../components/buypage/carlistings/carlistings/CarListings";
 
 export function Buy() {
 	return (

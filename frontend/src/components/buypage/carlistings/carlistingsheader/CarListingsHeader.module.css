@@ -1,0 +1,4 @@
+.carlistingsheader{
+	display: flex;
+	flex-direction: column;
+}
