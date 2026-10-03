@@ -16,7 +16,7 @@ function CarFilter() {
 		"Plugin-Diesel",
 	];
 
-	const drivetrainOptions = ["Manual", "Automatic"];
+	const transmissionOptions = ["Manual", "Automatic"];
 
 	return (
 		<div className={styles.carfilter}>
@@ -52,8 +52,8 @@ function CarFilter() {
 			<InputFilter options={fuelOptions} headerText="Fuel"></InputFilter>
 			<Divider></Divider>
 			<InputFilter
-				options={drivetrainOptions}
-				headerText="Drivetrain"
+				options={transmissionOptions}
+				headerText="Transmission"
 			></InputFilter>
 		</div>
 	);
