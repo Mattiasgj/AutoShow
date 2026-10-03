@@ -6,7 +6,9 @@ function CarListings() {
 	return (
 		<div className={styles.carlistings}>
 			<CarListingsHeader />
-			<div></div>
+			<div className={styles.carlistingscontent}>
+				{/* Car listings will be displayed here */}
+			</div>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import styles from "./CarMake.module.css";
-import carMakes from "../data/CarMakes";
+import carMakes from "../../../../data/CarMakes";
 import { useState } from "react";
 
 function CarMakeModel() {
