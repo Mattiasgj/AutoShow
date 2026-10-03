@@ -1,4 +1,5 @@
 .dropdown {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -28,6 +29,9 @@
 }
 
 .dropdowncontent {
+	position: absolute;
+    top: 100%;
+    left: 0;
 	width: 175px;
 	border: 1px solid var(--color-border-light);
 	border-radius: 5px;
@@ -37,6 +41,7 @@
 .dropdownitem {
 	color: var(--color-text-main);
 	font-family: var(--font-family-base);
+	padding: 10px;
 }
 
 .dropdownitem:hover {

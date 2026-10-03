@@ -10,6 +10,12 @@ interface DropdownProps {
 
 function Dropdown({ title, content }: DropdownProps) {
 	const [isOpen, setIsOpen] = useState(false);
+	const [titleText, setTitleText] = useState(title);
+
+	const handleItemClick = (item: string) => {
+		setIsOpen(false);
+		setTitleText(item);
+	};
 
 	return (
 		<div className={styles.dropdown}>
@@ -19,14 +25,18 @@ function Dropdown({ title, content }: DropdownProps) {
 				aria-expanded={isOpen}
 				onClick={() => setIsOpen((open) => !open)}
 			>
-				<span className={styles.dropdowntext}>{title}</span>
+				<span className={styles.dropdowntext}>{titleText}</span>
 				{isOpen ? <ChevronUp /> : <ChevronDown />}
 			</button>
 
 			{isOpen && (
 				<div className={styles.dropdowncontent}>
 					{content.map((item) => (
-						<div className={styles.dropdownitem} key={item}>
+						<div
+							className={styles.dropdownitem}
+							key={item}
+							onClick={() => handleItemClick(item)}
+						>
 							{item}
 						</div>
 					))}
