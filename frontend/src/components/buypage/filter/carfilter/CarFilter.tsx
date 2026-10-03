@@ -27,7 +27,7 @@ function CarFilter() {
 			<Divider></Divider>
 
 			<FilterSlider
-				labelText="Max price: €"
+				labelText="Max price: kr"
 				minVal={0}
 				maxVal={100000}
 				stepSize={500}
