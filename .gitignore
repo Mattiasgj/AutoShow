@@ -1,0 +1,78 @@
+# Node / Frontend
+
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# .NET / Backend
+
+# Build output
+bin/
+obj/
+
+# .NET user-specific files
+*.user
+*.rsuser
+*.suo
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# Test results
+TestResults/
+*.trx
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# ASP.NET 
+*.pfx
+
+# Entity Framework 
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files
+*.env
+*.env.*
+
+# User secrets
+secrets.json
+
+
+# Editors / OS
+.vscode/
+!.vscode/extensions.json
+
+.DS_Store
+Thumbs.db
+
+# Visual Studio / MSBuild
+*.sln.iml
+*.csproj.user
+*.userprefs
+
+# Swap files
+*.swp
+*.swo
