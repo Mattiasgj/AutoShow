@@ -9,5 +9,8 @@ namespace AutoShow.Api.Interfaces
 	public interface IListingsRepository
 	{
 		Task<List<Listing>> GetTenListingsAsync();
+		Task<Listing?> GetListingByIdAsync(int id);
+		Task<Listing> CreateListingAsync(Listing listing);
+		Task<Listing?> DeleteListingByIdAsync(int id);
 	}
 }

@@ -16,9 +16,35 @@ namespace AutoShow.Api.Repositories
 		{
 			_context = context;
 		}
-		public Task<List<Listing>> GetTenListingsAsync()
+
+		public async Task<Listing> CreateListingAsync(Listing listing)
 		{
-			var listings = _context.Listings.OrderBy(listing => listing.Id).Take(10).ToListAsync();
+			await _context.Listings.AddAsync(listing);
+			await _context.SaveChangesAsync();
+			return listing;
+		}
+
+		public async Task<Listing?> DeleteListingByIdAsync(int id)
+		{
+			var listing = await _context.Listings.FindAsync(id);
+			if (listing == null)
+			{
+				return null;
+			}
+
+			_context.Listings.Remove(listing);
+			await _context.SaveChangesAsync();
+			return listing;
+		}
+
+		public async Task<Listing?> GetListingByIdAsync(int id)
+		{
+			return await _context.Listings.FindAsync(id);
+		}
+
+		public async Task<List<Listing>> GetTenListingsAsync()
+		{
+			var listings = await _context.Listings.OrderBy(listing => listing.Id).Take(10).ToListAsync();
 
 			return listings;
 		}

@@ -26,5 +26,22 @@ namespace AutoShow.Api.Mappers
 				CreatedAt = listingModel.CreatedAt
 			};
 		}
+
+		public static Listing ToCreateListingDto(this CreateListingDto listingModel)
+		{
+			return new Listing
+			{
+				Make = listingModel.Make,
+				Model = listingModel.Model,
+				Year = listingModel.Year,
+				Price = listingModel.Price,
+				Mileage = listingModel.Mileage,
+				FuelType = listingModel.FuelType,
+				Transmission = listingModel.Transmission,
+				Title = listingModel.Title,
+				Description = listingModel.Description,
+				CreatedAt = listingModel.CreatedAt
+			};
+		}
 	}
 }
