@@ -91,6 +91,8 @@ namespace AutoShow.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ListingId");
+
                     b.ToTable("ListingImages");
                 });
 
@@ -120,6 +122,22 @@ namespace AutoShow.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("AutoShow.Api.Models.ListingImage", b =>
+                {
+                    b.HasOne("AutoShow.Api.Models.Listing", "Listing")
+                        .WithMany("Images")
+                        .HasForeignKey("ListingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Listing");
+                });
+
+            modelBuilder.Entity("AutoShow.Api.Models.Listing", b =>
+                {
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

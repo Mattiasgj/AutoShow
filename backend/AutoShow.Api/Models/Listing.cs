@@ -20,6 +20,7 @@ namespace AutoShow.Api.Models
 		public string Transmission { get; set; } = string.Empty;
 		public string Title { get; set; } = string.Empty;
 		public string Description { get; set; } = string.Empty;
+		public ICollection<ListingImage> Images { get; set; } = new List<ListingImage>();
 		public DateTime CreatedAt { get; set; }
 	}
 }

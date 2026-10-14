@@ -9,6 +9,8 @@ namespace AutoShow.Api.Models
 	{
 		public int Id { get; set; }
 		public int ListingId { get; set; }
+
+		public Listing Listing { get; set; } = null!;
 		public string ImageUrl { get; set; } = string.Empty;
 	}
 }
