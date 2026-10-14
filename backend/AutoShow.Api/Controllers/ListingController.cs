@@ -44,7 +44,7 @@ namespace AutoShow.Api.Controllers
 		[HttpPost]
 		public async Task<IActionResult> CreateListing([FromBody] CreateListingDto createListingDto)
 		{
-			var listingModel = createListingDto.ToCreateListingDto();
+			var listingModel = createListingDto.ToListingFromCreateDto();
 			var createdListing = await _listingRepo.CreateListingAsync(listingModel);
 			var createdListingDto = createdListing.ToGetListingDto();
 			return CreatedAtAction(nameof(GetTenListings), new { id = createdListing.Id }, createdListingDto);

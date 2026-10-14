@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoShow.Api.Models;
 
 namespace AutoShow.Api.DTOs
 {
@@ -16,6 +17,7 @@ namespace AutoShow.Api.DTOs
 		public string Transmission { get; set; } = string.Empty;
 		public string Title { get; set; } = string.Empty;
 		public string Description { get; set; } = string.Empty;
+		public List<string> Images { get; set; } = new();
 		public DateTime CreatedAt { get; set; }
 	}
 }

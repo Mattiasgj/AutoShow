@@ -27,7 +27,7 @@ namespace AutoShow.Api.Mappers
 			};
 		}
 
-		public static Listing ToCreateListingDto(this CreateListingDto listingModel)
+		public static Listing ToListingFromCreateDto(this CreateListingDto listingModel)
 		{
 			return new Listing
 			{
@@ -40,6 +40,7 @@ namespace AutoShow.Api.Mappers
 				Transmission = listingModel.Transmission,
 				Title = listingModel.Title,
 				Description = listingModel.Description,
+				Images = listingModel.Images,
 				CreatedAt = listingModel.CreatedAt
 			};
 		}
