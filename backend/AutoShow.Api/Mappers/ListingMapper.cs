@@ -23,6 +23,7 @@ namespace AutoShow.Api.Mappers
 				Transmission = listingModel.Transmission,
 				Title = listingModel.Title,
 				Description = listingModel.Description,
+				Images = listingModel.Images.Select(image => image.ImageUrl).ToList(),
 				CreatedAt = listingModel.CreatedAt
 			};
 		}

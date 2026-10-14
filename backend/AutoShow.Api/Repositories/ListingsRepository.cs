@@ -44,7 +44,7 @@ namespace AutoShow.Api.Repositories
 
 		public async Task<List<Listing>> GetTenListingsAsync()
 		{
-			var listings = await _context.Listings.OrderBy(listing => listing.Id).Take(10).ToListAsync();
+			var listings = await _context.Listings.Include(l => l.Images).OrderBy(listing => listing.Id).Take(10).ToListAsync();
 
 			return listings;
 		}
