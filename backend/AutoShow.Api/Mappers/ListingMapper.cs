@@ -40,7 +40,10 @@ namespace AutoShow.Api.Mappers
 				Transmission = listingModel.Transmission,
 				Title = listingModel.Title,
 				Description = listingModel.Description,
-				Images = listingModel.Images,
+				Images = listingModel.Images.Select(url => new ListingImage
+				{
+					ImageUrl = url
+				}).ToList(),
 				CreatedAt = listingModel.CreatedAt
 			};
 		}
