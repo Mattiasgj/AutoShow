@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Buy } from "./pages/Buy";
+import { Sell } from "./pages/Sell";
 
 import "./layouts/index.css";
 
@@ -9,6 +10,7 @@ function App() {
 			<div className="page-container">
 				<Routes>
 					<Route path="/buy" element={<Buy />} />
+					<Route path="/sell" element={<Sell />} />
 				</Routes>
 			</div>
 		</Router>
